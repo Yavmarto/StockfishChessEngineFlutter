@@ -39,8 +39,6 @@ flutter:
   # Please refer to README.md for a detailed explanation.
   plugin:
     platforms:
-      android:
-        ffiPlugin: true
       linux:
         ffiPlugin: true
       windows:
