@@ -1,4 +1,4 @@
-//#define _ffigen
+#define _ffigen
 
 #ifdef _WIN32
 #include <BaseTsd.h>

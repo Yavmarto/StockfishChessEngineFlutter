@@ -1,4 +1,4 @@
-# Run with `flutter pub run ffigen --config ffigen_linux.yaml`.
+# Run with `flutter pub run ffigen --config ffigen.yaml`.
 name: StockfishChessEngineBindings
 description: |
   Bindings for `src/stockfish.h`.
@@ -18,4 +18,4 @@ comments:
   style: any
   length: full
 llvm-path:
-  - /usr/lib/llvm-14
+  - '/opt/homebrew/opt/llvm'
