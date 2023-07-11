@@ -1,13 +1,12 @@
 import 'dart:async';
 
+import 'package:chess/chess.dart' as chess_lib;
 import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:chess/chess.dart' as chess_lib;
+import 'package:stockfish_for_desktop/stockfish.dart';
+import 'package:stockfish_for_desktop/stockfish_state.dart';
 import 'package:window_manager/window_manager.dart';
-
-import 'package:stockfish/stockfish.dart';
-import 'package:stockfish/stockfish_state.dart';
 
 void main() {
   runApp(const MaterialApp(

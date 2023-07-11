@@ -1,10 +1,10 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint stockfishchessengineflutter.podspec` to validate before publishing.
+# Run `pod lib lint stockfish_for_desktop.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'stockfishchessengineflutter'
-  s.version          = '0.0.1'
+  s.name             = 'stockfish_for_desktop'
+  s.version          = '0.1.0'
   s.summary          = 'A new Flutter FFI plugin project.'
   s.description      = <<-DESC
 A new Flutter FFI plugin project.
@@ -21,7 +21,7 @@ A new Flutter FFI plugin project.
   s.source_files     = 'Classes/**/*'
   s.dependency 'FlutterMacOS'
 
-  s.platform = :osx, '10.11'
+  s.platform = :osx, '11.0'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   s.swift_version = '5.0'
 end

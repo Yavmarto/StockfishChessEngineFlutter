@@ -1,15 +1,14 @@
 // Using code from https://github.com/ArjanAswal/Stockfish/blob/master/lib/src/stockfish.dart
 
 import 'dart:async';
+import 'dart:convert';
+import 'dart:developer' as developer;
 import 'dart:ffi';
 import 'dart:io';
-import 'dart:convert';
-import 'dart:typed_data';
 import 'dart:isolate';
-import 'dart:developer' as developer;
 
-import 'package:flutter/foundation.dart';
 import 'package:ffi/ffi.dart';
+import 'package:flutter/foundation.dart';
 
 import 'stockfish_bindings_generated.dart';
 import 'stockfish_state.dart';
@@ -19,7 +18,8 @@ const String _libName = 'stockfish';
 /// The dynamic library in which the symbols for [StockfishChessEngineBindings] can be found.
 final DynamicLibrary _dylib = () {
   if (Platform.isMacOS || Platform.isIOS) {
-    return DynamicLibrary.open('$_libName.framework/$_libName');
+    return DynamicLibrary.open(
+        'stockfish_for_desktop.framework/stockfish_for_desktop');
   }
   if (Platform.isAndroid || Platform.isLinux) {
     return DynamicLibrary.open('lib$_libName.so');
